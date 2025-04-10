@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "HSAndroid"
+
+includeBuild("build-logic")
