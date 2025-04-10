@@ -1,0 +1,12 @@
+#!/bin/sh
+
+commit_msg=$(cat "$1")
+
+pattern="^(feat|fix|docs|style|refactor|perf|test|chore|build|ci|revert|temp)(\\(.+\\))?: .{1,100}$"
+
+if ! echo "$commit_msg" | grep -qE "$pattern"; then
+  echo "❌ Commit message does not follow Conventional Commits!"
+  echo ""
+  echo "Example: feat(core-util): add Result wrapper"
+  exit 1
+fi
