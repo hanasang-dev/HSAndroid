@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         gradlePluginPortal()
         google()
@@ -15,5 +16,3 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "HSAndroid"
-
-includeBuild("build-logic")

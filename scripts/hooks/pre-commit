@@ -1,0 +1,20 @@
+#!/bin/sh
+
+echo "🔍 Running Spotless Check..."
+
+./gradlew spotlessCheck --quiet
+
+if [ $? -ne 0 ]; then
+  echo "❌ Spotless Check failed. Running spotlessApply..."
+  ./gradlew spotlessApply --quiet
+
+  echo "📂 Applying changes..."
+  git add .
+
+  echo "✅ Spotless format applied. Please review the changes."
+  echo "Aborting commit so you can verify."
+  exit 1
+fi
+
+echo "✅ Spotless Check passed."
+exit 0

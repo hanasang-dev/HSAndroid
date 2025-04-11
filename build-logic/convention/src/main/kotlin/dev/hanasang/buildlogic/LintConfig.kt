@@ -1,4 +1,4 @@
-package android
+package dev.hanasang.buildlogic
 
 import com.android.build.api.dsl.LibraryExtension
 
@@ -13,9 +13,11 @@ fun LibraryExtension.configureAndroidLint() {
         // 무쓸모 룰 제거
         disable.addAll(
             listOf(
-                "ContentDescription",       // 접근성 관련 경고
-                "IconMissingDensityFolder" // 저해상도 아이콘 경고
-            )
+                // 접근성 관련 경고
+                "ContentDescription",
+                // 저해상도 아이콘 경고
+                "IconMissingDensityFolder",
+            ),
         )
     }
 }
