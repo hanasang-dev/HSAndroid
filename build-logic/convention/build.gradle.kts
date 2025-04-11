@@ -5,8 +5,10 @@ plugins {
 }
 
 dependencies {
-    implementation(libs.spotless.gradle.plugin)
+    compileOnly(libs.spotless.gradle.plugin)
+    compileOnly(libs.detekt.gradle.plugin)
     compileOnly(libs.android.gradlePlugin)
+    compileOnly(libs.kotlin.gradlePlugin)
 }
 
 gradlePlugin {
@@ -14,6 +16,12 @@ gradlePlugin {
         register("spotlessConvention") {
             id = "dev.hanasang.buildlogic.spotless"
             implementationClass = "dev.hanasang.buildlogic.SpotlessConventionPlugin"
+        }
+    }
+    plugins {
+        register("detektConvention") {
+            id = "dev.hanasang.buildlogic.detekt"
+            implementationClass = "dev.hanasang.buildlogic.DetektConventionPlugin"
         }
     }
 }

@@ -3,15 +3,19 @@ agp = "8.7.2"
 kotlin = "2.0.20"
 spotless = "6.25.0"
 jetbrainsKotlinJvm = "1.9.23"
+detekt = "1.23.1"
 
 [plugins]
-spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 
 #Custom Plugin
 dev-hanasang-buildlogic-spotless = { id = "dev.hanasang.buildlogic.spotless" }
+dev-hanasang-buildlogic-detekt = { id = "dev.hanasang.buildlogic.detekt" }
 
 [libraries]
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 spotless-gradle-plugin = { group = "com.diffplug.spotless", name = "spotless-plugin-gradle", version.ref = "spotless" }
+detekt-gradle-plugin = { group = "io.gitlab.arturbosch.detekt", name = "detekt-gradle-plugin", version.ref = "detekt" }
