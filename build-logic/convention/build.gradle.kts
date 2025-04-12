@@ -2,6 +2,7 @@ group = "dev.hanasang.buildlogic"
 
 plugins {
     `kotlin-dsl`
+    alias(libs.plugins.dependencyguard)
 }
 
 dependencies {
@@ -22,6 +23,12 @@ gradlePlugin {
         register("detektConvention") {
             id = "dev.hanasang.buildlogic.detekt"
             implementationClass = "dev.hanasang.buildlogic.DetektConventionPlugin"
+        }
+    }
+    plugins {
+        register("dependencyguardConvention") {
+            id = "dev.hanasang.buildlogic.dependencyguard"
+            implementationClass = "dev.hanasang.buildlogic.DependencyGuardConventionPlugin"
         }
     }
 }
