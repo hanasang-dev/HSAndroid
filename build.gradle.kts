@@ -1,3 +1,5 @@
+import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
+
 group = "dev.hanasang.hsandroid"
 
 plugins {
@@ -7,4 +9,12 @@ plugins {
     alias(libs.plugins.dependencyguard) apply false
     alias(libs.plugins.dev.hanasang.buildlogic.spotless)
     alias(libs.plugins.dependencyanalysis)
+    alias(libs.plugins.versions)
+}
+
+tasks.named<DependencyUpdatesTask>("dependencyUpdates").configure {
+    checkForGradleUpdate = true
+    outputFormatter = "json"
+    outputDir = "$rootDir"
+    reportfileName = "report"
 }

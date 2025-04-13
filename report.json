@@ -1,0 +1,119 @@
+{
+ "count": 6,
+ "current": {
+  "count": 1,
+  "dependencies": [
+   {
+    "group": "com.dropbox.dependency-guard",
+    "name": "com.dropbox.dependency-guard.gradle.plugin",
+    "version": "0.5.0",
+    "projectUrl": "https://github.com/dropbox/dependency-guard",
+    "userReason": null
+   }
+  ]
+ },
+ "outdated": {
+  "count": 5,
+  "dependencies": [
+   {
+    "group": "com.autonomousapps.dependency-analysis",
+    "name": "com.autonomousapps.dependency-analysis.gradle.plugin",
+    "version": "1.26.0",
+    "projectUrl": "https://github.com/autonomousapps/dependency-analysis-android-gradle-plugin",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.16.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.diffplug.spotless",
+    "name": "com.diffplug.spotless.gradle.plugin",
+    "version": "6.25.0",
+    "projectUrl": null,
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "7.0.3",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.github.ben-manes.versions",
+    "name": "com.github.ben-manes.versions.gradle.plugin",
+    "version": "0.51.0",
+    "projectUrl": null,
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "0.52.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "io.gitlab.arturbosch.detekt",
+    "name": "io.gitlab.arturbosch.detekt.gradle.plugin",
+    "version": "1.23.1",
+    "projectUrl": "https://detekt.dev",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "1.23.8",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin.jvm",
+    "name": "org.jetbrains.kotlin.jvm.gradle.plugin",
+    "version": "1.9.23",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.1.20",
+     "integration": null
+    }
+   }
+  ]
+ },
+ "exceeded": {
+  "count": 0,
+  "dependencies": []
+ },
+ "undeclared": {
+  "count": 0,
+  "dependencies": []
+ },
+ "unresolved": {
+  "count": 0,
+  "dependencies": []
+ },
+ "gradle": {
+  "enabled": true,
+  "running": {
+   "isFailure": false,
+   "isUpdateAvailable": false,
+   "reason": "",
+   "version": "8.9"
+  },
+  "current": {
+   "isFailure": false,
+   "isUpdateAvailable": true,
+   "reason": "",
+   "version": "8.13"
+  },
+  "releaseCandidate": {
+   "isFailure": false,
+   "isUpdateAvailable": true,
+   "reason": "",
+   "version": "8.14-rc-1"
+  },
+  "nightly": {
+   "isFailure": false,
+   "isUpdateAvailable": false,
+   "reason": "update check disabled",
+   "version": ""
+  }
+ }
+}

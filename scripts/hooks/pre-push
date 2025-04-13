@@ -9,4 +9,12 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "✅ Dependency Analysis Check passed."
+
+echo "🔍 Running Dependency Updates Check..."
+./gradlew dependencyUpdates --quiet
+
+git add report.json
+
+echo "✅ Dependency Updates report generated and staged."
+
 exit 0
