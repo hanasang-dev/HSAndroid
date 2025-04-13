@@ -13,7 +13,7 @@ plugins {
     alias(libs.plugins.spotless) apply false
     alias(libs.plugins.detekt) apply false
     alias(libs.plugins.dependencyguard) apply false
-    alias(libs.plugins.versions) apply false
+    alias(libs.plugins.versions)
     alias(libs.plugins.dev.hanasang.buildlogic.spotless)
     alias(libs.plugins.dependencyanalysis)
 }
