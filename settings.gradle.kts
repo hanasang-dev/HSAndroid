@@ -17,8 +17,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "HSAndroid"
 
-plugins{
-    id("com.gradle.develocity") version("4.0")
+plugins {
+    id("com.gradle.develocity") version ("4.0")
 }
 
 develocity {

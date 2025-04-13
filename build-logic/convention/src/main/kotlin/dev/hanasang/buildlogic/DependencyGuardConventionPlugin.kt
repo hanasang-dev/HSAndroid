@@ -1,8 +1,7 @@
 package dev.hanasang.buildlogic
 
-import org.gradle.api.Project
 import org.gradle.api.Plugin
-
+import org.gradle.api.Project
 
 class DependencyGuardConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) = with(target) {
@@ -11,7 +10,7 @@ class DependencyGuardConventionPlugin : Plugin<Project> {
         extensions.getByName("dependencyGuard").let { ext ->
             (ext as groovy.lang.GroovyObject).setProperty(
                 "configurationFiles",
-                listOf("dependency-guard/dependencies.json")
+                listOf("dependency-guard/dependencies.json"),
             )
         }
     }
