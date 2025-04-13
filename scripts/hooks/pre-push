@@ -10,12 +10,4 @@ fi
 
 echo "✅ Dependency Analysis Check passed."
 
-echo "🔍 Running Dependency Updates Check..."
-cd "$(git rev-parse --show-toplevel)" || exit 1
-./gradlew dependencyUpdates --quiet
-
-git add report.json
-
-echo "✅ Dependency Updates report generated and staged."
-
 exit 0
