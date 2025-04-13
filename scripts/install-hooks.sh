@@ -3,6 +3,7 @@
 HOOK_NAMES=(
   "commit-msg"
   "pre-commit"
+  "pre-push"
 )
 
 echo "🚀 Installing Git Hooks..."

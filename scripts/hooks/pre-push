@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "🔍 Running Dependency Analysis Check..."
+./gradlew buildHealth --quiet
+if [ $? -ne 0 ]; then
+  echo "❌ Dependency Analysis failed."
+  echo "Please review ./build/reports/dependency-analysis/build-health-report.txt"
+  exit 1
+fi
+
+echo "✅ Dependency Analysis Check passed."
+exit 0

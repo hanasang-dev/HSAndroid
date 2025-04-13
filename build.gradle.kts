@@ -6,4 +6,5 @@ plugins {
     alias(libs.plugins.detekt) apply false
     alias(libs.plugins.dependencyguard) apply false
     alias(libs.plugins.dev.hanasang.buildlogic.spotless)
+    alias(libs.plugins.dependencyanalysis)
 }
