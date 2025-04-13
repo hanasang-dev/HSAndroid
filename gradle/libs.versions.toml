@@ -15,6 +15,7 @@ detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 dependencyguard = { id = "com.dropbox.dependency-guard", version.ref = "dependencyguard" }
 dependencyanalysis = { id = "com.autonomousapps.dependency-analysis", version.ref = "dependencyanalysis" }
 versions = { id = "com.github.ben-manes.versions", version.ref = "versions" }
+secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin"}
 
 #Custom Plugin
 dev-hanasang-buildlogic-spotless = { id = "dev.hanasang.buildlogic.spotless" }
