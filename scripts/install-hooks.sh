@@ -38,6 +38,15 @@ do
   fi
 done
 
+# 링크된 파일에 실행권한 추가 (심볼릭 링크 대상 X)
+for hook in "${HOOK_NAMES[@]}"
+do
+  dest=".git/hooks/$hook"
+  if [ -L "$dest" ]; then
+    chmod +x "$dest"
+  fi
+done
+
 echo "🎉 Git Hooks installation completed."
 
 exit 0
