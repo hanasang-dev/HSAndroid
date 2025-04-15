@@ -1,7 +1,7 @@
 {
- "count": 7,
+ "count": 37,
  "current": {
-  "count": 7,
+  "count": 14,
   "dependencies": [
    {
     "group": "com.autonomousapps.dependency-analysis",
@@ -39,6 +39,34 @@
     "userReason": null
    },
    {
+    "group": "com.google.testing.platform",
+    "name": "android-driver-instrumentation",
+    "version": "0.0.9-alpha03",
+    "projectUrl": "https://developer.android.com/testing",
+    "userReason": null
+   },
+   {
+    "group": "com.google.testing.platform",
+    "name": "android-test-plugin",
+    "version": "0.0.9-alpha03",
+    "projectUrl": "https://developer.android.com/testing",
+    "userReason": null
+   },
+   {
+    "group": "com.google.testing.platform",
+    "name": "core",
+    "version": "0.0.9-alpha03",
+    "projectUrl": "https://developer.android.com/testing",
+    "userReason": null
+   },
+   {
+    "group": "com.google.testing.platform",
+    "name": "launcher",
+    "version": "0.0.9-alpha03",
+    "projectUrl": "https://developer.android.com/testing",
+    "userReason": null
+   },
+   {
     "group": "io.gitlab.arturbosch.detekt",
     "name": "io.gitlab.arturbosch.detekt.gradle.plugin",
     "version": "1.23.8",
@@ -46,17 +74,315 @@
     "userReason": null
    },
    {
-    "group": "org.jetbrains.kotlin.jvm",
-    "name": "org.jetbrains.kotlin.jvm.gradle.plugin",
-    "version": "2.1.20",
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-build-tools-impl",
+    "version": "2.0.21",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-compiler-embeddable",
+    "version": "2.0.21",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-klib-commonizer-embeddable",
+    "version": "2.0.21",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-native-prebuilt",
+    "version": "2.0.21",
     "projectUrl": "https://kotlinlang.org/",
     "userReason": null
    }
   ]
  },
  "outdated": {
-  "count": 0,
-  "dependencies": []
+  "count": 23,
+  "dependencies": [
+   {
+    "group": "com.android.library",
+    "name": "com.android.library.gradle.plugin",
+    "version": "8.9.1",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "8.11.0-alpha06",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-device-provider-ddmlib",
+    "version": "31.9.1",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.11.0-alpha06",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-device-provider-gradle",
+    "version": "31.9.1",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.11.0-alpha06",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-additional-test-output",
+    "version": "31.9.1",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.11.0-alpha06",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-apk-installer",
+    "version": "31.9.1",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.11.0-alpha06",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-coverage",
+    "version": "31.9.1",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.11.0-alpha06",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-device-info",
+    "version": "31.9.1",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.11.0-alpha06",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-emulator-control",
+    "version": "31.9.1",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.11.0-alpha06",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-logcat",
+    "version": "31.9.1",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.11.0-alpha06",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-retention",
+    "version": "31.9.1",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.10.0-alpha02",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-result-listener-gradle",
+    "version": "31.9.1",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.11.0-alpha06",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.google.dagger",
+    "name": "hilt-android",
+    "version": "2.52",
+    "projectUrl": "https://github.com/google/dagger",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.56.1",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.google.dagger",
+    "name": "hilt-compiler",
+    "version": "2.52",
+    "projectUrl": "https://github.com/google/dagger",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.56.1",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.google.dagger.hilt.android",
+    "name": "com.google.dagger.hilt.android.gradle.plugin",
+    "version": "2.52",
+    "projectUrl": "https://github.com/google/dagger",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.56.1",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.google.devtools.ksp",
+    "name": "com.google.devtools.ksp.gradle.plugin",
+    "version": "2.0.21-1.0.27",
+    "projectUrl": "https://goo.gle/ksp",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.1.20-2.0.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.google.devtools.ksp",
+    "name": "symbol-processing",
+    "version": "2.0.21-1.0.27",
+    "projectUrl": "https://goo.gle/ksp",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.1.20-2.0.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.google.devtools.ksp",
+    "name": "symbol-processing-api",
+    "version": "2.0.21-1.0.27",
+    "projectUrl": "https://goo.gle/ksp",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.1.20-2.0.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.google.devtools.ksp",
+    "name": "symbol-processing-cmdline",
+    "version": "2.0.21-1.0.27",
+    "projectUrl": "https://goo.gle/ksp",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.1.20-2.0.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-scripting-compiler-embeddable",
+    "version": "2.0.21",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.2.0-Beta1",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-stdlib",
+    "version": "2.0.21",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.2.0-Beta1",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-test",
+    "version": "2.0.21",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.2.0-Beta1",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin.android",
+    "name": "org.jetbrains.kotlin.android.gradle.plugin",
+    "version": "2.0.21",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.2.0-Beta1",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin.jvm",
+    "name": "org.jetbrains.kotlin.jvm.gradle.plugin",
+    "version": "2.0.21",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.2.0-Beta1",
+     "integration": null
+    }
+   }
+  ]
  },
  "exceeded": {
   "count": 0,

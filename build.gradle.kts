@@ -4,7 +4,7 @@ group = "dev.hanasang.hsandroid"
 
 buildscript {
     dependencies {
-        classpath("com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.1")
+        classpath(libs.secrets.gradle.plugin)
     }
 }
 
@@ -16,6 +16,10 @@ plugins {
     alias(libs.plugins.versions)
     alias(libs.plugins.dev.hanasang.buildlogic.spotless)
     alias(libs.plugins.dependencyanalysis)
+    alias(libs.plugins.android.library) apply false
+    alias(libs.plugins.kotlin.android) apply false
+    alias(libs.plugins.dagger.hilt.android) apply false
+    alias(libs.plugins.ksp) apply false
 }
 
 tasks.named<DependencyUpdatesTask>("dependencyUpdates").configure {

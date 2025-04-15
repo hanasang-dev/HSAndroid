@@ -10,6 +10,7 @@ dependencies {
     compileOnly(libs.detekt.gradle.plugin)
     compileOnly(libs.android.gradlePlugin)
     compileOnly(libs.kotlin.gradlePlugin)
+    compileOnly(libs.hilt.android.gradle.plugin)
 }
 
 gradlePlugin {
@@ -29,6 +30,12 @@ gradlePlugin {
         register("dependencyguardConvention") {
             id = "dev.hanasang.buildlogic.dependencyguard"
             implementationClass = "dev.hanasang.buildlogic.DependencyGuardConventionPlugin"
+        }
+    }
+    plugins {
+        register("androidLibraryConvention") {
+            id = "dev.hanasang.buildlogic.android.library"
+            implementationClass = "dev.hanasang.buildlogic.AndroidLibraryConventionPlugin"
         }
     }
 }

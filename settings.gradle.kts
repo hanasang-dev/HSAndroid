@@ -27,3 +27,5 @@ develocity {
         termsOfUseAgree.set("yes")
     }
 }
+include(":buildconfig:stub")
+include(":buildconfig:impl")

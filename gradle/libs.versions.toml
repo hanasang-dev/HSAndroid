@@ -1,12 +1,21 @@
 [versions]
-agp = "8.7.2"
-kotlin = "2.0.20"
+agp = "8.7.3"
+kotlin = "2.0.21"
+secretsGradlePlugin = "2.0.1"
 spotless = "7.0.3"
-jetbrainsKotlinJvm = "2.1.20"
+jetbrainsKotlinJvm = "2.0.21"
 detekt = "1.23.8"
 dependencyguard = "0.5.0"
 dependencyanalysis = "2.16.0"
 versions = "0.52.0"
+agpVersion = "8.9.1"
+kotlinVersion = "2.0.21"
+junit = "4.13.2"
+runner = "1.0.2"
+espressoCore = "3.0.2"
+appcompatV7 = "28.0.0"
+hilt = "2.52"
+ksp = "2.0.21-1.0.27"
 
 [plugins]
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
@@ -15,15 +24,28 @@ detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 dependencyguard = { id = "com.dropbox.dependency-guard", version.ref = "dependencyguard" }
 dependencyanalysis = { id = "com.autonomousapps.dependency-analysis", version.ref = "dependencyanalysis" }
 versions = { id = "com.github.ben-manes.versions", version.ref = "versions" }
-secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin"}
+dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 
 #Custom Plugin
 dev-hanasang-buildlogic-spotless = { id = "dev.hanasang.buildlogic.spotless" }
+dev-hanasang-buildlogic-android-library = { id = "dev.hanasang.buildlogic.android.library" }
 dev-hanasang-buildlogic-detekt = { id = "dev.hanasang.buildlogic.detekt" }
 dev-hanasang-buildlogic-dependencyguard = { id = "dev.hanasang.buildlogic.dependencyguard" }
+android-library = { id = "com.android.library", version.ref = "agpVersion" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 [libraries]
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+secrets-gradle-plugin = { module = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin", version.ref = "secretsGradlePlugin" }
 spotless-gradle-plugin = { group = "com.diffplug.spotless", name = "spotless-plugin-gradle", version.ref = "spotless" }
 detekt-gradle-plugin = { group = "io.gitlab.arturbosch.detekt", name = "detekt-gradle-plugin", version.ref = "detekt" }
+hilt-android-gradle-plugin = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "hilt" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+runner = { group = "com.android.support.test", name = "runner", version.ref = "runner" }
+espresso-core = { group = "com.android.support.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat-v7 = { group = "com.android.support", name = "appcompat-v7", version.ref = "appcompatV7" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
