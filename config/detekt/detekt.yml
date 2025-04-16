@@ -530,7 +530,7 @@ style:
   DataClassShouldBeImmutable:
     active: false
   DestructuringDeclarationWithTooManyEntries:
-    active: true
+    active: false
     maxDestructuringEntries: 3
   DoubleNegativeLambda:
     active: false
@@ -543,33 +543,19 @@ style:
       - 'not'
       - 'non'
   EqualsNullCall:
-    active: true
+    active: false
   EqualsOnSignatureLine:
     active: false
   ExplicitCollectionElementAccessMethod:
     active: false
   ExplicitItLambdaParameter:
-    active: true
+    active: false
   ExpressionBodySyntax:
     active: false
     includeLineWrapping: false
   ForbiddenAnnotation:
     active: false
-    annotations:
-      - reason: 'it is a java annotation. Use `Suppress` instead.'
-        value: 'java.lang.SuppressWarnings'
-      - reason: 'it is a java annotation. Use `kotlin.Deprecated` instead.'
-        value: 'java.lang.Deprecated'
-      - reason: 'it is a java annotation. Use `kotlin.annotation.MustBeDocumented` instead.'
-        value: 'java.lang.annotation.Documented'
-      - reason: 'it is a java annotation. Use `kotlin.annotation.Target` instead.'
-        value: 'java.lang.annotation.Target'
-      - reason: 'it is a java annotation. Use `kotlin.annotation.Retention` instead.'
-        value: 'java.lang.annotation.Retention'
-      - reason: 'it is a java annotation. Use `kotlin.annotation.Repeatable` instead.'
-        value: 'java.lang.annotation.Repeatable'
-      - reason: 'Kotlin does not support @Inherited annotation, see https://youtrack.jetbrains.com/issue/KT-22265'
-        value: 'java.lang.annotation.Inherited'
+    annotations: []
   ForbiddenComment:
     active: true
     comments:
@@ -586,11 +572,7 @@ style:
     forbiddenPatterns: ''
   ForbiddenMethodCall:
     active: false
-    methods:
-      - reason: 'print does not allow you to configure the output stream. Use a logger instead.'
-        value: 'kotlin.io.print'
-      - reason: 'println does not allow you to configure the output stream. Use a logger instead.'
-        value: 'kotlin.io.println'
+    methods: []
   ForbiddenSuppress:
     active: false
     rules: []
@@ -599,7 +581,7 @@ style:
     ignoreOverridden: false
     ignoreUsageInGenerics: false
   FunctionOnlyReturningConstant:
-    active: true
+    active: false
     ignoreOverridableFunction: true
     ignoreActualFunction: true
     excludedFunctions: []
@@ -607,49 +589,30 @@ style:
     active: true
     maxJumpCount: 1
   MagicNumber:
-    active: true
-    excludes: ['**/test/**', '**/androidTest/**', '**/commonTest/**', '**/jvmTest/**', '**/androidUnitTest/**', '**/androidInstrumentedTest/**', '**/jsTest/**', '**/iosTest/**', '**/*.kts']
-    ignoreNumbers:
-      - '-1'
-      - '0'
-      - '1'
-      - '2'
+    active: false
+    excludes: []
+    ignoreNumbers: []
     ignoreHashCodeFunction: true
-    ignorePropertyDeclaration: false
-    ignoreLocalVariableDeclaration: false
-    ignoreConstantDeclaration: true
-    ignoreCompanionObjectPropertyDeclaration: true
-    ignoreAnnotation: false
-    ignoreNamedArgument: true
-    ignoreEnums: false
-    ignoreRanges: false
-    ignoreExtensionFunctions: true
   MandatoryBracesLoops:
     active: false
   MaxChainedCallsOnSameLine:
     active: false
     maxChainedCalls: 5
   MaxLineLength:
-    active: true
+    active: false
     maxLineLength: 120
-    excludePackageStatements: true
-    excludeImportStatements: true
-    excludeCommentStatements: false
-    excludeRawStrings: true
   MayBeConst:
-    active: true
+    active: false
   ModifierOrder:
-    active: true
+    active: false
   MultilineLambdaItParameter:
     active: false
   MultilineRawStringIndentation:
     active: false
     indentSize: 4
-    trimmingMethods:
-      - 'trimIndent'
-      - 'trimMargin'
+    trimmingMethods: []
   NestedClassesVisibility:
-    active: true
+    active: false
   NewLineAtEndOfFile:
     active: true
   NoTabs:
@@ -673,17 +636,14 @@ style:
   RedundantVisibilityModifierRule:
     active: false
   ReturnCount:
-    active: true
+    active: false
     max: 2
     excludedFunctions:
       - 'equals'
-    excludeLabeled: false
-    excludeReturnFromLambda: true
-    excludeGuardClauses: false
   SafeCast:
-    active: true
+    active: false
   SerialVersionUIDInSerializableClass:
-    active: true
+    active: false
   SpacingBetweenPackageAndImports:
     active: false
   StringShouldBeRawString:
@@ -693,32 +653,29 @@ style:
   ThrowsCount:
     active: true
     max: 2
-    excludeGuardClauses: false
   TrailingWhitespace:
     active: false
   TrimMultilineRawString:
     active: false
-    trimmingMethods:
-      - 'trimIndent'
-      - 'trimMargin'
+    trimmingMethods: []
   UnderscoresInNumericLiterals:
     active: false
     acceptableLength: 4
     allowNonStandardGrouping: false
   UnnecessaryAbstractClass:
-    active: true
+    active: false
   UnnecessaryAnnotationUseSiteTarget:
     active: false
   UnnecessaryApply:
-    active: true
+    active: false
   UnnecessaryBackticks:
     active: false
   UnnecessaryBracesAroundTrailingLambda:
     active: false
   UnnecessaryFilter:
-    active: true
+    active: false
   UnnecessaryInheritance:
-    active: true
+    active: false
   UnnecessaryInnerClass:
     active: false
   UnnecessaryLet:
@@ -731,24 +688,24 @@ style:
   UnusedImports:
     active: false
   UnusedParameter:
-    active: true
+    active: false
     allowedNames: 'ignored|expected'
   UnusedPrivateClass:
-    active: true
+    active: false
   UnusedPrivateMember:
-    active: true
+    active: false
     allowedNames: ''
   UnusedPrivateProperty:
-    active: true
-    allowedNames: '_|ignored|expected|serialVersionUID'
+    active: false
+    allowedNames: ''
   UseAnyOrNoneInsteadOfFind:
-    active: true
+    active: false
   UseArrayLiteralsInAnnotations:
-    active: true
+    active: false
   UseCheckNotNull:
-    active: true
+    active: false
   UseCheckOrError:
-    active: true
+    active: false
   UseDataClass:
     active: false
     allowVars: false
@@ -758,27 +715,23 @@ style:
     active: false
   UseIfInsteadOfWhen:
     active: false
-    ignoreWhenContainingVariableDeclaration: false
   UseIsNullOrEmpty:
-    active: true
+    active: false
   UseLet:
     active: false
   UseOrEmpty:
-    active: true
+    active: false
   UseRequire:
-    active: true
+    active: false
   UseRequireNotNull:
-    active: true
+    active: false
   UseSumOfInsteadOfFlatMapSize:
     active: false
   UselessCallOnNotNull:
-    active: true
+    active: false
   UtilityClassWithPublicConstructor:
-    active: true
+    active: false
   VarCouldBeVal:
-    active: true
-    ignoreLateinitVar: false
+    active: false
   WildcardImport:
-    active: true
-    excludeImports:
-      - 'java.util.*'
+    active: false

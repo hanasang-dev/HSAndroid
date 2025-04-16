@@ -1,7 +1,7 @@
 {
- "count": 37,
+ "count": 38,
  "current": {
-  "count": 14,
+  "count": 15,
   "dependencies": [
    {
     "group": "com.autonomousapps.dependency-analysis",
@@ -64,6 +64,13 @@
     "name": "launcher",
     "version": "0.0.9-alpha03",
     "projectUrl": "https://developer.android.com/testing",
+    "userReason": null
+   },
+   {
+    "group": "io.gitlab.arturbosch.detekt",
+    "name": "detekt-cli",
+    "version": "1.23.8",
+    "projectUrl": "https://detekt.dev",
     "userReason": null
    },
    {

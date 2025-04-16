@@ -14,7 +14,7 @@ class DetektConventionPlugin : Plugin<Project> {
         extensions.configure<DetektExtension> {
             config.setFrom(rootProject.file("config/detekt/detekt.yml"))
             buildUponDefaultConfig = true
-            autoCorrect = true
+            autoCorrect = false
         }
 
         tasks.withType<KotlinCompile>().configureEach {

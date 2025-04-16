@@ -17,11 +17,32 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "✅ Spotless Check passed."
+echo "🔍 Running Detekt..."
+./gradlew detekt --quiet
+if [ $? -ne 0 ]; then
+  echo "❌ Detekt failed."
+  echo "Please fix the issues before committing."
+  exit 1
+fi
+echo "✅ Detekt passed."
 
 echo "🔍 Running Dependency Updates Check..."
 ./gradlew dependencyUpdates --quiet
 git add report.json
 
 echo "✅ Spotless and Dependency Updates completed."
+
+echo "🔍 Running Dependency Guard for :core..."
+./gradlew :core:dependencyGuard --quiet --no-daemon
+
+if [ $? -eq 0 ]; then
+  echo "[`date '+%H:%M:%S'`] ✅ Dependency Guard baseline updated."
+  git add core/dependencies/
+else
+  echo "❌ Dependency Guard failed. Please investigate."
+  exit 1
+fi
+
+echo "✅ All checks passed."
 
 exit 0

@@ -16,6 +16,11 @@ espressoCore = "3.0.2"
 appcompatV7 = "28.0.0"
 hilt = "2.52"
 ksp = "2.0.21-1.0.27"
+coreKtx = "1.16.0"
+junitVersion = "1.2.1"
+espressoCoreVersion = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
 
 [plugins]
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
@@ -49,3 +54,8 @@ appcompat-v7 = { group = "com.android.support", name = "appcompat-v7", version.r
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCoreVersion" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }

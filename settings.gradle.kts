@@ -29,3 +29,4 @@ develocity {
 }
 include(":buildconfig:stub")
 include(":buildconfig:impl")
+include(":core")
