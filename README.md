@@ -1,4 +1,3 @@
-
 # HSAndroid
 
 Android 프로젝트 개발 생산성을 높이기 위한 개인 템플릿 레포입니다.
@@ -7,20 +6,29 @@ Android 프로젝트 개발 생산성을 높이기 위한 개인 템플릿 레�
 
 ---
 
-## 프로젝트 구성 목적
+## 프로젝트 목표 및 구성 현황
 
-- 공통 Architecture 설계
-- 공통 Util 구성
-- 디자인 시스템 구성
-- Feature 개발 템플릿 제공
-- 개인 개발 자산 관리 및 확장성 고려
+이 프로젝트는 Android 개발의 구조적 기반을 마련하고, 반복 작업을 최소화하기 위한 템플릿 레포로 다음과 같은 작업이 포함되어 있습니다:
+
+- 멀티 모듈 기반 설계 도입
+- 공통 아키텍처(Core Architecture) 모듈 구성
+- Gradle Convention Plugin 적용 및 build-logic 모듈 분리
+- Detekt 기반 코드 스타일 및 품질 검사 도입
+- Git Hook 자동 적용 스크립트 구성(`install-hooks.sh`)
+- 의존성 관리 도구(Dependency Analysis, Versions Plugin 등) 적용 준비
+- Spotless 및 Detekt 통합을 통한 스타일 및 품질 관리 정착
+- pre-commit Hook에 Lint 및 스타일 검사 자동화 적용
+
+실제 개발에 앞서 구조와 기반을 먼저 다지는 것을 목표로 하며, 향후 Feature 모듈 구성 및 재사용 가능한 UI 시스템 설계로 확장될 예정입니다.
 
 ---
 
 ## 모듈 구조
-| 모듈명 | 역할 |
-|-------|------|
-| core-architecture | 핵심 아키텍처, Base 설계 |
+| 모듈명               | 역할                                           |
+|--------------------|------------------------------------------------|
+| core-architecture  | 핵심 아키텍처 및 Presentation, Domain 공통 설계 |
+| build-logic        | Gradle Convention Plugin 정의 및 관리           |
+| scripts            | Git Hook 및 유틸리티 스크립트 모음              |
 
 ---
 
