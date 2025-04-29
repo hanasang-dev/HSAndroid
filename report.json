@@ -1,15 +1,8 @@
 {
  "count": 38,
  "current": {
-  "count": 15,
+  "count": 14,
   "dependencies": [
-   {
-    "group": "com.autonomousapps.dependency-analysis",
-    "name": "com.autonomousapps.dependency-analysis.gradle.plugin",
-    "version": "2.16.0",
-    "projectUrl": "https://github.com/autonomousapps/dependency-analysis-android-gradle-plugin",
-    "userReason": null
-   },
    {
     "group": "com.diffplug.spotless",
     "name": "com.diffplug.spotless.gradle.plugin",
@@ -111,7 +104,7 @@
   ]
  },
  "outdated": {
-  "count": 23,
+  "count": 24,
   "dependencies": [
    {
     "group": "com.android.library",
@@ -121,7 +114,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "8.11.0-alpha06",
+     "milestone": "8.11.0-alpha08",
      "integration": null
     }
    },
@@ -133,7 +126,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "31.11.0-alpha06",
+     "milestone": "31.11.0-alpha08",
      "integration": null
     }
    },
@@ -145,7 +138,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "31.11.0-alpha06",
+     "milestone": "31.11.0-alpha08",
      "integration": null
     }
    },
@@ -157,7 +150,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "31.11.0-alpha06",
+     "milestone": "31.11.0-alpha08",
      "integration": null
     }
    },
@@ -169,7 +162,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "31.11.0-alpha06",
+     "milestone": "31.11.0-alpha08",
      "integration": null
     }
    },
@@ -181,7 +174,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "31.11.0-alpha06",
+     "milestone": "31.11.0-alpha08",
      "integration": null
     }
    },
@@ -193,7 +186,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "31.11.0-alpha06",
+     "milestone": "31.11.0-alpha08",
      "integration": null
     }
    },
@@ -205,7 +198,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "31.11.0-alpha06",
+     "milestone": "31.11.0-alpha08",
      "integration": null
     }
    },
@@ -217,7 +210,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "31.11.0-alpha06",
+     "milestone": "31.11.0-alpha08",
      "integration": null
     }
    },
@@ -241,7 +234,19 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "31.11.0-alpha06",
+     "milestone": "31.11.0-alpha08",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.autonomousapps.dependency-analysis",
+    "name": "com.autonomousapps.dependency-analysis.gradle.plugin",
+    "version": "2.16.0",
+    "projectUrl": "https://github.com/autonomousapps/dependency-analysis-android-gradle-plugin",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.17.0",
      "integration": null
     }
    },
@@ -253,7 +258,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.56.1",
+     "milestone": "2.56.2",
      "integration": null
     }
    },
@@ -265,7 +270,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.56.1",
+     "milestone": "2.56.2",
      "integration": null
     }
    },
@@ -277,7 +282,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.56.1",
+     "milestone": "2.56.2",
      "integration": null
     }
    },
@@ -289,7 +294,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.1.20-2.0.0",
+     "milestone": "2.2.0-Beta1-2.0.0",
      "integration": null
     }
    },
@@ -301,7 +306,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.1.20-2.0.0",
+     "milestone": "2.2.0-Beta1-2.0.0",
      "integration": null
     }
    },
@@ -313,7 +318,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.1.20-2.0.0",
+     "milestone": "2.2.0-Beta1-2.0.0",
      "integration": null
     }
    },
@@ -325,7 +330,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.1.20-2.0.0",
+     "milestone": "2.2.0-Beta1-2.0.0",
      "integration": null
     }
    },
@@ -413,15 +418,15 @@
   },
   "current": {
    "isFailure": false,
-   "isUpdateAvailable": false,
+   "isUpdateAvailable": true,
    "reason": "",
-   "version": "8.13"
+   "version": "8.14"
   },
   "releaseCandidate": {
    "isFailure": false,
-   "isUpdateAvailable": true,
-   "reason": "",
-   "version": "8.14-rc-1"
+   "isUpdateAvailable": false,
+   "reason": "update check succeeded: no release available",
+   "version": ""
   },
   "nightly": {
    "isFailure": false,
