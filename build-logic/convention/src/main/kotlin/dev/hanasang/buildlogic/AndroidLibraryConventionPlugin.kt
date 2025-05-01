@@ -19,6 +19,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
         pluginManager.apply("org.jetbrains.kotlin.android")
         pluginManager.apply("com.google.dagger.hilt.android")
         pluginManager.apply("com.google.devtools.ksp")
+        pluginManager.apply("org.jetbrains.kotlin.plugin.compose")
 
         extensions.getByType<LibraryExtension>().apply {
             compileSdk = 35
@@ -35,6 +36,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
 
             buildFeatures {
                 buildConfig = true
+                compose = true
             }
 
             flavorDimensions += "env"
@@ -60,8 +62,12 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
         }
 
         dependencies {
+            add("implementation", platform(libs.findLibrary("androidx.compose.bom").get()))
             add("implementation", libs.findLibrary("hilt.android").get())
             add("ksp", libs.findLibrary("hilt.compiler").get())
+            add("implementation", libs.findLibrary("androidx.compose.runtime").get())
+            add("implementation", libs.findLibrary("androidx.compose.ui").get())
+            add("implementation", libs.findLibrary("androidx.compose.foundation").get())
             add("androidTestImplementation", libs.findLibrary("kotlin.test").get())
             add("testImplementation", libs.findLibrary("kotlin.test").get())
         }

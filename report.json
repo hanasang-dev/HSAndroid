@@ -1,8 +1,15 @@
 {
- "count": 38,
+ "count": 44,
  "current": {
-  "count": 14,
+  "count": 15,
   "dependencies": [
+   {
+    "group": "androidx.compose",
+    "name": "compose-bom",
+    "version": "2025.04.01",
+    "projectUrl": "https://developer.android.com/jetpack",
+    "userReason": null
+   },
    {
     "group": "com.diffplug.spotless",
     "name": "com.diffplug.spotless.gradle.plugin",
@@ -104,8 +111,44 @@
   ]
  },
  "outdated": {
-  "count": 24,
+  "count": 29,
   "dependencies": [
+   {
+    "group": "androidx.compose.foundation",
+    "name": "foundation",
+    "version": "1.8.0",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/compose-foundation#1.9.0-alpha01",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "1.9.0-alpha01",
+     "integration": null
+    }
+   },
+   {
+    "group": "androidx.compose.runtime",
+    "name": "runtime",
+    "version": "1.8.0",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/compose-runtime#1.9.0-alpha01",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "1.9.0-alpha01",
+     "integration": null
+    }
+   },
+   {
+    "group": "androidx.compose.ui",
+    "name": "ui",
+    "version": "1.8.0",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/compose-ui#1.9.0-alpha01",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "1.9.0-alpha01",
+     "integration": null
+    }
+   },
    {
     "group": "com.android.library",
     "name": "com.android.library.gradle.plugin",
@@ -336,13 +379,25 @@
    },
    {
     "group": "org.jetbrains.kotlin",
+    "name": "kotlin-compose-compiler-plugin-embeddable",
+    "version": "2.0.21",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.2.0-Beta2",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin",
     "name": "kotlin-scripting-compiler-embeddable",
     "version": "2.0.21",
     "projectUrl": "https://kotlinlang.org/",
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.2.0-Beta1",
+     "milestone": "2.2.0-Beta2",
      "integration": null
     }
    },
@@ -354,7 +409,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.2.0-Beta1",
+     "milestone": "2.2.0-Beta2",
      "integration": null
     }
    },
@@ -366,7 +421,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.2.0-Beta1",
+     "milestone": "2.2.0-Beta2",
      "integration": null
     }
    },
@@ -378,7 +433,7 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.2.0-Beta1",
+     "milestone": "2.2.0-Beta2",
      "integration": null
     }
    },
@@ -390,7 +445,19 @@
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.2.0-Beta1",
+     "milestone": "2.2.0-Beta2",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin.plugin.compose",
+    "name": "org.jetbrains.kotlin.plugin.compose.gradle.plugin",
+    "version": "2.0.21",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.2.0-Beta2",
      "integration": null
     }
    }
