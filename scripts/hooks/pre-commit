@@ -32,8 +32,9 @@ git add report.json
 
 echo "✅ Spotless and Dependency Updates completed."
 
-echo "🔍 Running Dependency Guard for :core..."
-./gradlew :core:dependencyGuard --quiet --no-daemon
+echo "🔍 Running Dependency Guard"
+./gradlew :core:presentation:portal:dependencyGuard --quiet --no-daemon
+./gradlew :core:presentation:state:dependencyGuard --quiet --no-daemon
 
 if [ $? -eq 0 ]; then
   echo "[`date '+%H:%M:%S'`] ✅ Dependency Guard baseline updated."

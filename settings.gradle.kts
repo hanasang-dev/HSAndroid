@@ -30,3 +30,7 @@ develocity {
 include(":buildconfig:stub")
 include(":buildconfig:impl")
 include(":core")
+include(":core:presentation")
+include(":core:presentation:portal")
+include(":core:presentation:state")
+include(":core:presentation:portal-compiler")
